@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Flow</title>
+    <style>
+        
+        .flex-container{
+            display: flex;
+            height: 200px;
+            border: 1px solid blue;
+            max-width: 500px;
+            background-color: beige;
+        }
+
+        .default{
+            flex-flow: row nowrap;
+        }
+
+        .wrap{
+            flex-flow: row wrap;
+        }
+        .c-nowrap{
+            flex-flow: column nowrap;
+        }
+
+        .c-wrap{
+            flex-flow: column wrap;
+        }
+
+        .item{
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>default - Row No Wrap</h1>
+    <div class="flex-container default">
+        <div class="item green">1</div>
+        <div class="item green">2</div>
+        <div class="item green">3</div>
+        <div class="item green">4</div>
+        <div class="item green">5</div>
+    </div>
+    
+    <h1>default - Row Wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item green">1</div>
+        <div class="item green">2</div>
+        <div class="item green">3</div>
+        <div class="item green">4</div>
+        <div class="item green">5</div>
+        <div class="item green">6</div>
+    </div>
+
+    <h1>default - column Wrap</h1>
+    <div class="flex-container c-wrap">
+        <div class="item green">1</div>
+        <div class="item green">2</div>
+        <div class="item green">3</div>
+        <div class="item green">4</div>
+        <div class="item green">5</div>
+    </div>
+
+    <h1>default - column no Wrap</h1>
+    <div class="flex-container c-nowrap">
+        <div class="item green">1</div>
+        <div class="item green">2</div>
+        <div class="item green">3</div>
+        <div class="item green">4</div>
+        <div class="item green">5</div>
+    </div>
+    
+
+</body>
+</html>

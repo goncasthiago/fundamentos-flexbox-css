@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: greenyellow;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: blueviolet;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: wheat;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .start{
+            align-content: flex-start;
+        }
+        .end{
+            align-content: flex-end;
+        }
+
+        .around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Stretch</p>
+    <div class="container stretch">
+        <div class="item">1   aliquam optio odio quos odit quidem!</div>
+        <div class="item">2  lorem error amet laboriosam. Dicta aliquam optio odio quos odit quidem!</div>
+        <div class="item">3  sa quam optio odio quos odit quidem!</div>
+        <div class="item">4  m. Dicta aliquam optio odio quos odit quidem!</div>
+        <div class="item">5  laboriosam. Dicta ali</div>
+        <div class="item">6  dolorem error amet laboriosam. Dicta aliquam optio odio quos odit quidem!</div>
+        <div class="item">7  t impedit quas, ipsa dolorem error amet laboriosam. Dicta ali odio quos odit quidem!</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">1   aliquam optio odio quos odit quidem!</div>
+        <div class="item">2  lorem error dit quidem!</div>
+        <div class="item">3  sa quam optio odio quos odit quidem!</div>
+        <div class="item">4  m. Dicta aliquam optio odio quos odit quidem!</div>
+        <div class="item">5  laboriosam. Dicta ali</div>
+        <div class="item">6  dolorem quidem!</div>
+        <div class="item">7  t impedit quidem!</div>
+    </div>
+
+    <p>Flex start</p>
+    <div class="container start">
+        <div class="item">1   aliquam optio odio quos odit quidem!</div>
+        <div class="item">2  lorem error dit quidem!</div>
+        <div class="item">3  sa quam optio odio quos odit quidem!</div>
+        <div class="item">4  m. Dicta aliquam optio odio quos odit quidem!</div>
+        <div class="item">5  laboriosam. Dicta ali</div>
+        <div class="item">6  dolorem quidem!</div>
+        <div class="item">7  t impedit quidem!</div>
+    </div>
+    <p>Flex End</p>
+    <div class="container end">
+        <div class="item">1   aliquam optio odio quos odit quidem!</div>
+        <div class="item">2  lorem error dit quidem!</div>
+        <div class="item">3  sa quam optio odio quos odit quidem!</div>
+        <div class="item">4  m. Dicta aliquam optio odio quos odit quidem!</div>
+        <div class="item">5  laboriosam. Dicta ali</div>
+        <div class="item">6  dolorem quidem!</div>
+        <div class="item">7  t impedit quidem!</div>
+    </div>
+
+    <p>Space around</p>
+    <div class="container around">
+        <div class="item">1   aliquam optio odio quos odit quidem!</div>
+        <div class="item">2  lorem error dit quidem!</div>
+        <div class="item">3  sa quam optio odio quos odit quidem!</div>
+        <div class="item">4  m. Dicta aliquam optio odio quos odit quidem!</div>
+        <div class="item">5  laboriosam. Dicta ali</div>
+        <div class="item">6  dolorem quidem!</div>
+        <div class="item">7  t impedit quidem!</div>
+    </div>
+    
+</body>
+</html>
